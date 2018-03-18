@@ -17,5 +17,7 @@ cat ~/folders.txt | while read folder
         sudo rm -rf ./*
     done
 
+rm ~/folders.txt
+
 echo -e "\n Done!"
 echo -e "\n -------------- \n"
