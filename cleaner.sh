@@ -1,7 +1,8 @@
 #!/bin/bash
-# macos-user-cache-cleaner
+# macos-cleaner
 
 # Clearing user's cache.
+echo -e "\n -------------- \n"
 echo -e "Clearing user folder cache\n"
 ls ~/Library/Caches/ > ~/folders.txt
 
@@ -16,5 +17,5 @@ cat ~/folders.txt | while read folder
         sudo rm -rf ./*
     done
 
-echo -e "\n Cleared! Moving on for system cache..."
+echo -e "\n Done!"
 echo -e "\n -------------- \n"

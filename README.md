@@ -2,9 +2,22 @@
 A simple script to clean some junk.
 Still working on it!
 
-## Cache clearing
-## Path
-`~/Library/Caches`
+## Usage
 
-## Description
-This script will delete everything inside the folders except for the folder itself.
+First of all, make sure to made the script executable by giving:
+
+`sudo chmod +x cleaner.sh`
+
+Now you're ready to execute with:
+
+`./cleaner.sh`
+
+*Important note*
+
+Don't execute the script as root. It will try to delete root user cache, not yours.
+
+## Cache clearing
+This is the path the script will search folders to delete
+`~/Library/Caches`. 
+
+Once done, you will still see the folder's structure, but everything inside will be deleted. This is the safest thing to do. System Caches will not be affected in any way.
