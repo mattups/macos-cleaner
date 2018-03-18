@@ -14,13 +14,12 @@ Now you're ready to execute with:
 
 **_Important note_**
 
-Don't execute the script as root. It will try to delete root user cache, not yours.
+Don't execute the script as root or it will try to delete root user cache, not yours.
 
 ## Cache clearing
-This is the path the script will search folders to delete
-`~/Library/Caches`. 
+This is the path the script will search folders to delete in `~/Library/Caches`. 
 
-Once done, you will still see the folder's structure, but everything inside will be deleted. This is the safest thing to do. System Caches will not be affected in any way.
+Once done, you will still see the folder's structure, but everything inside will be deleted. This is the safest way to proceed. System Caches will not be affected in any way.
 
 ## Features
 Maybe other feature other than user's cache clearing will be added in future.
