@@ -1,7 +1,7 @@
 #!/bin/bash
 # macos-cleaner
 
-# Clearing user's cache.
+# Getting cache's folders structure.
 echo -e "\n -------------- \n"
 echo -e "Clearing user folder cache\n"
 ls ~/Library/Caches/ > ~/folders.txt
@@ -17,7 +17,7 @@ cat ~/folders.txt | while read folder
         sudo rm -rf ./*
     done
 
-rm ~/folders.t
+rm ~/folders.txt
 
 echo -e "\n Done!"
 echo -e "\n -------------- \n"
