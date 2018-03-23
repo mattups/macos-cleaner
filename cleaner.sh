@@ -6,10 +6,14 @@ echo -e "\n--------------\n"
 echo -e "Clearing user folder cache\n"
 ls ~/Library/Caches/ > ~/folders.txt
 
+echo "Starting in five seconds..."
+sleep 5
+
 # Gathering general infos.
 user=$(whoami)
 user_cache_path="/Users/$user/Library/Caches/"
 free_disk_space=$(df -h | sed -n 2p | awk '{print $4}')
+cache_folder_size=$(du -sh)
 
 # Cleaning.
 cat ~/folders.txt | while read folder
@@ -27,3 +31,4 @@ echo -e "\n--------------\n"
 
 echo -e "Free space before operation: $free_disk_space"
 echo -e "Free space after operation: $actual_free_disk_space"
+echo -e "Space recovered: $cache_folder_size"
