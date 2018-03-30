@@ -18,9 +18,9 @@ cache_folder_size=$(du -sh)
 cat ~/folders.txt | while read folder; do
     test -d $folder
         if [ $? -eq 0 ]; then
-        cd $folder && sudo rm -rf ./*
+            cd $folder && sudo rm -rf ./*
         fi
-done    
+done
 
 rm ~/folders.txt
 

@@ -23,3 +23,6 @@ Once done, you will still see the folder's structure, but everything inside will
 
 ## Features
 Maybe other feature other than user's cache clearing will be added in future. Still thinking about something useful! :)
+
+- [ ] Create menu for script
+- [ ] Clear user log in ~/Library/Log
