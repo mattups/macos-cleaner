@@ -15,11 +15,12 @@ cd $user_cache_path
 cache_folder_size=$(du -sh)
 
 # Cleaning.
-cat ~/folders.txt | while read folder
-    do
-        cd $user_cache_path$folder
-        sudo rm -rf ./*
-    done
+cat ~/folders.txt | while read folder; do
+    test -d $folder
+        if [ $? -eq 0 ]; then
+        cd $folder && sudo rm -rf ./*
+        fi
+done    
 
 rm ~/folders.txt
 
